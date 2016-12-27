@@ -1,0 +1,25 @@
+<!doctype html>
+<title>Latest Share Prices</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='my_style.css')}}'>
+<div class=page>
+  <h1>Where to Invest?</h1>
+  <div class=metanav>
+
+<h4>
+This app is designed to retun the dynamic of the share prices for a desired company for a desired number of days
+</h4>
+
+<form id='my_index' method='post' action='index' > <!-- action is the URL you want to move to next-->
+   <p>
+   Company Ticker Name, e.g. FB: <input type='text' name='ticker' />
+   </p>
+   <p>
+   Number of Days: <input type='text' name='n_days' />
+   </p>
+   <p>
+   <input type='submit' value='View the Prices!' /> <!-- value is the text that will appear on the button. -->
+   </p>
+</form>
+
+</div>
+</div>

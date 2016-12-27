@@ -1,0 +1,3 @@
+Company Name: GOOG
+Last N Days: 40
+
