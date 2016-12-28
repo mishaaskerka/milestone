@@ -11,3 +11,4 @@ pandas==0.18.1
 numpy==1.11.1
 matplotlib==1.5.3
 flexx==0.4.1
+tkinter
