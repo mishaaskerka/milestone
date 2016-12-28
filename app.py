@@ -34,7 +34,6 @@ def calculated_plot():
     colors = ["#%02x%02x%02x" % (int(r), int(g), int(b)) for r, g, b, _ in 255*plt.cm.rainbow(mpl.colors.Normalize()(range(len(app.vars['ticker']))))]
     p = figure(title="Stock share prices for the last {0} days".format(app.vars['n_days']), x_axis_label='Date', y_axis_label='Price / USD')
     for i, ii in enumerate(app.vars['ticker']):
-        print(ii)
         a = pd.read_csv('https://www.quandl.com/api/v3/datasets/WIKI/{0}/data.csv'.format(ii))
         a['Date'] = pd.to_datetime(a['Date'])
         mask = (a['Date'] > datetime.now().date() - timedelta(days=int(app.vars['n_days']))) & (a['Date'] <= datetime.now().date())
