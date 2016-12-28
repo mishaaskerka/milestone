@@ -1,16 +1,15 @@
 from flask import Flask, render_template, request, redirect
 import numpy as np
-import requests
-import simplejson as json
+#import requests
+#import simplejson as json
 import pandas as pd
 from datetime import timedelta
-import matplotlib.pyplot as plt
 from bokeh.plotting import figure, output_file, show, save
 from bokeh.models import DatetimeTickFormatter
-from bokeh.io import curdoc
+#from bokeh.io import curdoc
 from bokeh.layouts import row, widgetbox, column
-from bokeh.models import ColumnDataSource,CustomJS
-from bokeh.models.widgets import Slider, TextInput
+#from bokeh.models import ColumnDataSource,CustomJS
+#from bokeh.models.widgets import Slider, TextInput
 from datetime import datetime
 
 app = Flask(__name__)
