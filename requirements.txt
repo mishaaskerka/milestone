@@ -9,6 +9,6 @@ simplejson==3.10.0
 bokeh==0.12.2
 pandas==0.18.1
 numpy==1.11.1
-matplotlib==1.5.3
+matplotlib==1.4.3
 flexx==0.4.1
-tkinter
+scipy
