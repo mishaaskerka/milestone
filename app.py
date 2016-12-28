@@ -25,7 +25,7 @@ def index():
         app.vars['n_days'] = request.form['n_days']
         app.vars['ticker'] = request.form['ticker'].split(',')
         with open('log.txt','a+') as f:
-            f.write('Company Name: {0}\n'.format(app.vars['ticker'].split(',')))
+            f.write('Company Name: {0}\n'.format(app.vars['ticker']))
             f.write('Last N Days: {0}\n\n'.format(app.vars['n_days']))
         return redirect('/calculated_plot')
 
